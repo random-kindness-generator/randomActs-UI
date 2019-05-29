@@ -1,0 +1,179 @@
+.container home {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: 0%;
+    height: auto;
+    width:  80%;
+}
+
+.nav_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    padding: .5em 0 .5em 0;
+    overflow: hidden;
+    background: rgba(243, 210, 121, 0.973);
+    opacity: 1;
+    z-index: 1;
+}
+
+/* nav {
+    display: inline-block;
+    margin: -9px 0.8em 0 0.5em;
+    border-radius: 7em;
+    border: solid 1px transparent;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1rem;
+}
+
+/* ---------------- */
+
+#banner {
+    padding: 8em 0 6em 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-image: url('https://images.pexels.com/photos/5390/sunset-hands-love-woman.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-position: center;
+    background-size: cover;
+    height: 23rem;
+    position: relative;
+    text-align: center;
+}
+
+/* gives tint to image */
+
+#banner:before {
+    transition-delay: 1.25s;
+    content: '';
+    display: block;
+    background-color: #000;
+    height: 100%;
+    opacity: 0.65;
+    position: absolute;
+    width: 100%;
+}
+
+/* text inside of banner */
+
+#banner .imgText {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+
+#banner h1 {
+    font-size: 3.4em;
+    margin-top: 2.5em;
+    color: #FFF;
+}
+
+#banner p {
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+    color: white;
+    font-size: 1.75em;
+}
+
+/* .bannerButton {
+    background-color: #dbda94;
+} */
+
+.get-started-btn {
+    border: 2px solid #7FC3CD;
+    background-color: #7FC3CD;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    font: 400 12px "AvenirNext", sans-serif;
+    border-radius: 20px;
+    padding: 1em 5em;
+    cursor: default;
+}
+
+/* ---------footer */
+
+/* @media screen and (max-width: 500px) {
+    #footer {
+        padding: 1em;
+    }
+} */
+
+/* #footer {
+    padding: 4em 2em 4em 2em;
+} */
+
+#footer .copyright {
+    color: #c2810a;
+    font-size: 0.9em;
+    margin: 0 0 2em 0;
+    padding: 0;
+    text-align: center;
+}
+
+#footer .icons {
+    color: #c2810a;
+    font-size: 0.9em;
+    margin: 0 0 2em 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* #footer .copyright a {
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 1px #c2810a, 0px 0px 0px 4px #fff, 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+    font-size: 1em;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 auto 0.7em;
+    text-align: center;
+    width: 3em;
+    list-style: none;
+} */
+
+*/
+/* ----------- */
+
+article {
+    padding: 2em;
+    width: auto;
+    justify-content: center;
+    /* background: #f7f3eb; */
+}
+
+.article1 {
+    border-bottom: 2px dotted black;
+    margin: 0% 2%;
+    /* width: auto; */
+    padding: 8% 24% 0;
+    text-align: center;
+}
+
+/* .article2 {
+    border-bottom: 2px dotted black;
+    margin: 0% 2%;
+    padding: 0 29% 0;
+    /* */
+
+/* padding: 10px 0px 0px 20px width: auto; */
+
+/* }  */
+
+.article1 img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* .article1 h2 p button {
+    width: 150%;
+    align-content:  center;
+} */

@@ -1,0 +1,27 @@
+.container home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .article1 img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+;
+@media (max-width: 800px) {}
+
+;
+@media (max-width: 1000px) {
+    .article1 img {
+        width: 50%;
+        border-radius: 70%;
+    }
+}
+
+;
