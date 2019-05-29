@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+  color: purple;
+  margin: 0;
+  font-size: 3.2rem;
+}
+h2 {
+  color: purple;
+  margin: 0;
+  font-size: 2.8rem;
+}
+h3 {
+  color: purple;
+  margin: 0;
+  font-size: 1.6rem;
+}
+p {
+  color: black;
+  font-size: 1.4rem;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+body .container .header-section {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+body .container .site-logo {
+  padding-top: 20px;
+  float: left;
+}
+body .container .main-menu ul {
+  list-style-type: none;
+  float: right;
+}
+body .container .main-menu ul li {
+  display: inline;
+}
+body .container .main-menu ul li a {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 10px;
+  padding: 20px 0 5px;
+  text-decoration: none;
+  color: black;
+}
+body .footer-section {
+  padding: 110px 0;
+  text-align: center;
+}
+body .footer-section .copyright {
+  color: black;
+  text-align: center;
+}
+body .intro-section {
+  padding: 110px 0;
+  text-align: center;
+}
