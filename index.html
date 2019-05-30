@@ -7,12 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">    
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">        
         <link rel="stylesheet" href="css.font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
         <!-- JS -->
         <script defer="defer" src="js/index.js"></script>
     </head>
     <body>
+        <script defer="defer" src="./components/Tabs/Tabs.js"></script>
         <div class="wrapper">       
             <div class="nav-container">
                 <div class="nav-title">
@@ -28,16 +32,38 @@
                 </div>
             </div>
             <section class="intro-section">
-                <div id="quote-box">
-                    <p class="quote">Quote 1</p>                    
+                <div id="kindness-box">
+                    <p class="kindness">Kindness 1</p>                    
                     <p class="source"><span class="citation">Does it work? </span><span class="year">2019</span></p>
                 </div>
-                <button id="loadQuote">Show another quote</button>
+                <button id="loadact">Generate Act of Kindness</button>
                 <script src="js/script.js"></script>
                 <script>
-                setInterval(printQuote, 5000);
+                setInterval(printKindness, 5000);
                 </script>
             </section>
+
+            <section class="app-services">
+                <div class="owl-carousel">
+                    <div class="row-1">
+                        <h3>Regularly Practice Kindness</h3>
+                        <p>Sometimes life gets so busy that we forget to practice kindness and compassion. That's why we created Goodwill Gestures to send us daily reminders.</p>
+                    </div>
+                    <div class="row-2">
+                        <h3>Build Better Connections</h3>
+                        <p>Goodwill Gestures takes daily reminders one step further by randomly selecting one of your friends to receive your act of kindness.</p>
+                    </div>
+                    <div class="row-3">
+                        <h3>Kindness Spreads</h3>
+                        <p>Bringing joy to others spreads positivity to their relationships, too.</p>
+                        </div>
+                    <div class="row-4">
+                        <h3>Improve your own Wellbeing</h3>
+                        <p>Giving and receiving acts of kindness increase your oxytocin, which is a hormone that helps lower blood pressure, increases self-esteem, and reduces feelings of depression.</p>
+                    </div>
+                </div>
+            </section>
+
             <footer class="footer-section">
                 <h3 class="footer-title">
                     Goodwill Gestures
@@ -51,6 +77,8 @@
                 <div class="copyright">                        
                     <p>Copyright 2019 All rights reserved | Haili Copas-Starke</p>
                 </div>
+                <script src="jquery.min.js"></script>
+                <script src="owlcarousel/owl.carousel.min.js"></script>
             </footer>
         </div>
     </body>
