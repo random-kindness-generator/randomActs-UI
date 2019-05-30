@@ -81,9 +81,173 @@ body .footer-section .copyright {
   color: black;
   text-align: center;
 }
+body {
+  /*.border-smaller:active {
+        box-shadow: none;
+      } */
+}
 body .intro-section {
   padding: 110px 0;
+  font-size: 14px;
+  background: #ECF5B7;
+  font-family: sans-serif;
   text-align: center;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+body .border {
+  border: 6px solid #9CB418;
+  -webkit-box-shadow: 4px 4px 0 3px #7D9014;
+  -moz-box-shadow: 4px 4px 0 3px #7D9014;
+  box-shadow: 4px 4px 0 3px #7D9014;
+}
+body .border-smaller {
+  border: 4px solid #9CB418;
+  -webkit-box-shadow: 3px 3px 0 2px #7D9014;
+  -moz-box-shadow: 3px 3px 0 2px #7D9014;
+  box-shadow: 3px 3px 0 2px #7D9014;
+}
+body .transparent {
+  zoom: 1;
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+}
+body .container {
+  margin-top: -40px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #7D9014;
+}
+body header {
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+body .quote-box {
+  border-radius: 1px;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px 30px 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+body .quote-area {
+  min-height: 250px;
+  position: relative;
+}
+body #quote {
+  padding: 40px 20px;
+  font-size: 28px;
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+body .buttons-area {
+  float: left;
+}
+body .btn {
+  float: left;
+  background-color: #ECF5B7;
+  border-radius: 1px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+body .btn:first-of-type {
+  margin-right: 24px;
+}
+body #random-quote {
+  padding: 12px 24px;
+}
+body #tweet-quote {
+  padding: 6px 16px;
+  font-size: 30px;
+}
+body .author-area p::before {
+  content: "- ";
+}
+body .author-area {
+  float: right;
+}
+body #author {
+  font-size: 18px;
+  padding: 16px 8px 16px 0px;
+  font-style: italic;
+}
+body footer {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+body footer p a {
+  font-weight: 800;
+  font-size: 20px;
+}
+@media (max-width: 800px) {
+  body .container {
+    position: relative;
+    margin-top: 0;
+    padding-top: 30px;
+    height: 1vh;
+  }
+  body .quote-box {
+    width: 92%;
+  }
+  body .quote-area {
+    min-height: 330px;
+  }
+  body #quote {
+    padding: 30px 20px 0 20px;
+    width: 100%;
+  }
+  body .author-area {
+    float: none;
+    display: block;
+  }
+  body .btn {
+    vertical-align: middle;
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  body .buttons-area {
+    margin-bottom: 20px;
+    float: none;
+  }
+  body #tweet-quote {
+    padding: 6px 16px;
+  }
+}
+@media (max-width: 500px) {
+  body .btn:first-of-type {
+    margin-right: 0;
+  }
+  body .quote-box {
+    padding: 0 10px 10px 10px;
+  }
+  body .quote-area {
+    min-height: 300px;
+  }
+  body #quote {
+    padding: 0;
+  }
 }
 .intro-section {
   width: 100%;

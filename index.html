@@ -6,41 +6,46 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">        
         <link rel="stylesheet" href="css.font-awesome.min.css">
+        <script src="js/index.js" async></script>
     </head>
-    <body>
-        <div class="container">
-            <header class="header-section">
-                <div class="row">
-                    <h1 class="site-logo">Goodwill Gestures</h1>
-                </div>
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Login</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <section class="intro-section">
+    <body>            
+        <header class="header-section">
             <div class="row">
-                <h2 class="slogan">Spread love - it's the only way</h2>
+                <h1 class="site-logo">Goodwill Gestures</h1>
             </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>                    
+                </ul>
+            </nav>
+        </header>
+        <section class="intro-section">
+            <div id="quote-box">
+                <p class="quote">Quote 1</p>                    
+                <p class="source"><span class="citation">Does it work? </span><span class="year">2019</span></p>
+            </div>
+            <button id="loadQuote">Show another quote</button>
+            <script src="js/script.js"></script>
+            <script>
+            setInterval(printQuote, 5000);
+            </script>
         </section>
         <footer class="footer-section">
-            <div class="container">
-                <h3 class="footer-title">Goodwill Gestures</h3>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook" style="font-size:24px"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter" style="font-size:24px"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram" style="font-size:24px"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube" style="font-size:24px"></i></a></li>
-                    </ul>
-                    <div class="copyright">
-                        <p>Copyright 2019 All rights reserved | Haili Copas-Starke</p>
-                    </div>
-                </div>
+            <h3 class="footer-title">
+                Goodwill Gestures
+            </h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube" style="font-size:24px"></i></a></li>
+            </ul>
+            <div class="copyright">                        
+                <p>Copyright 2019 All rights reserved | Haili Copas-Starke</p>
+            </div>
         </footer>
     </body>
 </html>
