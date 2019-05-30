@@ -160,35 +160,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-body .container .header-section {
+.wrapper {
+  width: 100%;
+}
+.wrapper .nav-container {
   padding-top: 30px;
   padding-bottom: 20px;
   position: relative;
 }
-body .container .site-logo {
-  padding-top: 20px;
+.wrapper .nav-container .nav-title {
   float: left;
 }
-body .container .main-menu ul {
-  list-style-type: none;
+.wrapper .nav-container .navbar {
   float: right;
 }
-body .container .main-menu ul li {
-  display: inline;
+.wrapper .nav-container .navbar ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
 }
-body .container .main-menu ul li a {
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 10px;
-  padding: 20px 0 5px;
-  text-decoration: none;
+.wrapper .nav-container .navbar ul li a {
   color: black;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  padding: 0.5em;
 }
-body .footer-section {
+.wrapper .footer-section {
   padding: 110px 0;
   text-align: center;
 }
-body ul.social-icons {
+.wrapper .footer-section ul.social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -196,7 +200,7 @@ body ul.social-icons {
   list-style: none;
   text-decoration: none;
 }
-body .footer-section .copyright {
+.wrapper .footer-section .copyright {
   color: black;
   text-align: center;
 }
@@ -468,64 +472,64 @@ textarea.input .shadow-input {
   visibility: visible;
   opacity: 1;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.wrapper {
+  width: 100%;
 }
-* {
-  box-sizing: border-box;
+.wrapper .form-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
 }
-/* Full-width input fields */
-input[type=text],
-input[type=password] {
+.wrapper .form-container .form-title {
+  text-align: center;
+  justify-content: center;
+}
+.wrapper .form-container .form {
+  width: 100%;
+  text-align: center;
+  /* Clear floats */
+}
+.wrapper .form-container .form input[type=text],
+.wrapper .form-container .form input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
-  display: inline-block;
   border: none;
   background: #f1f1f1;
 }
-input[type=text]:focus,
-input[type=password]:focus {
+.wrapper .form-container .form input[type=text] input[type=text]:focus,
+.wrapper .form-container .form input[type=password] input[type=text]:focus,
+.wrapper .form-container .form input[type=text] input[type=password]:focus,
+.wrapper .form-container .form input[type=password] input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-/* Set a style for all buttons */
-button {
-  background-color: gold;
-  color: black;
+.wrapper .form-container .form button {
+  background-color: black;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+  width: 50%;
+  opacity: 0.8;
 }
-button:hover {
+.wrapper .form-container .form button button:hover {
   opacity: 1;
 }
-/* Float cancel and signup buttons and add an equal width */
-.signupbtn {
+.wrapper .form-container .form .createbtn {
   width: 50%;
   justify-content: center;
   align-items: center;
 }
-/* Add padding to container elements */
-.container {
-  padding: 16px;
+@media (max-width: 500px) {
+  .wrapper .form-container .form .createbtn {
+    width: 100%;
+  }
 }
-/* Clear floats */
-.clearfix::after {
+.wrapper .form-container .form .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .signupbtn {
-    width: 100%;
-  }
 }

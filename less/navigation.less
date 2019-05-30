@@ -1,33 +1,32 @@
-body {
-    .container{
+.wrapper {
+    width: 100%;
 
-        .header-section {
-            padding-top: 30px;
-            padding-bottom: 20px;
-            position: relative;
-        }
+    .nav-container {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        position: relative;
 
-        .site-logo {
-            padding-top: 20px;
+        .nav-title {
             float: left;
         }
 
-        .main-menu ul {
-            list-style-type: none;
+        .navbar {
             float: right;
-        }
+            ul {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+                list-style-type: none;
 
-        .main-menu ul li {
-            display: inline;
-        }
-
-        .main-menu ul li a {
-            display: inline-block;
-            margin-left: 15px;
-            margin-right: 10px;
-            padding: 20px 0 5px;
-            text-decoration: none;
-            color: black;
+                li a {
+                    color: black;
+                    text-decoration: none;
+                    text-align: center;
+                    display: inline;
+                    padding: .5em;
+                }
+            }
         }
     }
 }
