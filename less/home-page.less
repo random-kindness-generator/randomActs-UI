@@ -1,11 +1,15 @@
 .wrapper {
 
+  @media @phone {
+    padding: 1%;
+  }
+
   .intro-section {
-    padding: 110px 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
     text-align: center;
     font-size: 14px;
-    background: #ECF5B7;
-    font-family: sans-serif;
+    background: #fa625f;
     text-align: center;
     -moz-transition: all .6s; 
     -webkit-transition: all .6s;
@@ -19,21 +23,21 @@
       box-shadow: 4px 4px 0 3px #fa625f;
 
       .border-smaller {
-        border: 4px solid #fa625f;
-        -webkit-box-shadow: 3px 3px 0 2px #fa625f;
-        -moz-box-shadow: 3px 3px 0 2px #fa625f;
-        box-shadow: 3px 3px 0 2px #fa625f;
+        border: 4px solid #DFDCE3;
+        -webkit-box-shadow: 3px 3px 0 2px #DFDCE3;
+        -moz-box-shadow: 3px 3px 0 2px #DFDCE3;
+        box-shadow: 3px 3px 0 2px #DFDCE3;
       }
     }
 
     kindness-box {
       border-radius: 1px;
-      width: 90%;
-      max-width: 800px;
+      width: 100%;
       margin: auto;
-      padding: 0 20px 30px 20px;
+      padding-top: 5em;
+      padding-bottom: 5em;
       display: inline-block;
-      background-color: rgba(255,255,255,.7);
+      background-color: #F7B733;
     
       #kindness {
         padding: 40px 20px;
@@ -57,9 +61,9 @@
 
       .btn {
         float: left;
-        background-color: #ECF5B7;
+        background-color: #F7B733;
         border-radius: 1px;
-        font-size: 20px;
+        font-size: 2em;
         margin-right: 8px;
 
         .btn:first-of-type {
@@ -81,6 +85,7 @@
 
       .kindness-box {
         width: 92%;
+        border: 1em solid white;
 
         #kindness {
         padding: 30px 20px 0 20px;
@@ -126,12 +131,12 @@
     .slideshow-container {
       width: 100%;
       position: relative;
-      margin: auto;
-      justify-content: center;
+      padding: 1%;
     }
 
     .mySlides {
       display: none;
+      text-align: center;
     }
 
     .prev, .next {
@@ -140,10 +145,8 @@
       top: 50%;
       width: auto;
       margin-top: -22px;
-      padding: 16px;
-      color: white;
+      color: #F7B733;
       transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
       user-select: none;
     }
 
@@ -162,7 +165,7 @@
       height: 15px;
       width: 15px;
       margin: 0 2px;
-      background-color: #bbb;
+      background-color: #F7B733;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;

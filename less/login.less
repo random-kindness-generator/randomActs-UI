@@ -1,5 +1,8 @@
 .wrapper {
   width: 100%;
+  @media @phone {
+    padding: 1%;
+  }
 
   .form-container {
     padding: 15px;
@@ -10,11 +13,13 @@
     .form-title {
       text-align: center;
       justify-content: center;
+      @media @phone {
+        padding-bottom: 1em;
+      }
     }
     
     .form {
       width: 100%;
-      tex
       text-align: center;
 
       input[type=text], input[type=password] {
@@ -32,13 +37,14 @@
     
       button {
         background-color: black;
-        color: white;
+        color: #F7B733;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
         cursor: pointer;
         width: 50%;
         opacity: 0.8;
+        justify-content: center;
 
         button:hover {
           opacity:1;

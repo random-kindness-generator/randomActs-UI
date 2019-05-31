@@ -9,16 +9,28 @@
         position: relative;
         background-color: #4ABDAC;
 
+        @media @phone {
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
+
         .nav-title {
             float: left;
             color: black;
             @media @phone {
+                float: none;
                 position: top;
+                text-align: center;
+                padding-bottom: .5em;
             }
         }
 
         .navbar {
             float: right;
+            @media @phone {
+                float: none;
+            }
+
             ul {
                 display: flex;
                 flex-direction: row;
@@ -32,6 +44,10 @@
                     text-align: center;
                     display: inline;
                     padding: .5em;
+
+                    @media @phone {
+                        padding: .5em;
+                    }
                 }
             }
         }
