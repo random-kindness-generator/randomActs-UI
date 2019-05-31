@@ -13,7 +13,7 @@ class TabLink {
         for (let i = 0; i < links1.length; i++) {
             links1[i].classList.remove('tabs-link-selected');
         }
-        this.element.classList.add('tabs-link-selected'); // #13  
+        this.element.classList.add('tabs-link-selected'); 
         this.tabItem.select(); 
     }
 }

@@ -16,7 +16,6 @@
         <script defer="defer" src="js/index.js"></script>
     </head>
     <body>
-        <script defer="defer" src="./components/Tabs/Tabs.js"></script>
         <div class="wrapper">       
             <div class="nav-container">
                 <div class="nav-title">
@@ -42,31 +41,37 @@
                 setInterval(printKindness, 5000);
                 </script>
             </section>
-
             <section class="app-services">
-                <div class="owl-carousel">
-                    <div class="row-1">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
                         <h3>Regularly Practice Kindness</h3>
                         <p>Sometimes life gets so busy that we forget to practice kindness and compassion. That's why we created Goodwill Gestures to send us daily reminders.</p>
                     </div>
-                    <div class="row-2">
-                        <h3>Build Better Connections</h3>
-                        <p>Goodwill Gestures takes daily reminders one step further by randomly selecting one of your friends to receive your act of kindness.</p>
-                    </div>
-                    <div class="row-3">
-                        <h3>Kindness Spreads</h3>
-                        <p>Bringing joy to others spreads positivity to their relationships, too.</p>
-                        </div>
-                    <div class="row-4">
-                        <h3>Improve your own Wellbeing</h3>
-                        <p>Giving and receiving acts of kindness increase your oxytocin, which is a hormone that helps lower blood pressure, increases self-esteem, and reduces feelings of depression.</p>
-                    </div>
+                <div class="mySlides fade">
+                    <h3>Build Better Connections</h3>
+                    <p>Goodwill Gestures takes daily reminders one step further by randomly selecting one of your friends to receive your act of kindness.</p>
+                </div>
+                <div class="mySlides fade">
+                    <h3>Kindness Spreads</h3>
+                    <p>Bringing joy to others spreads positivity to their relationships, too.</p>
+                </div>
+                <div class="mySlides fade">
+                    <h3>Improve your own Wellbeing</h3>
+                    <p>Giving and receiving acts of kindness increase your oxytocin, which is a hormone that helps lower blood pressure, increases self-esteem, and reduces feelings of depression.</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
                 </div>
             </section>
-
             <footer class="footer-section">
-                <h3 class="footer-title">
-                    Goodwill Gestures
+                <h3 class="footer-title">Goodwill Gestures
                 </h3>
                 <ul class="social-icons">
                     <li><a href="#"><i class="fab fa-facebook" style="font-size:24px"></i></a></li>
@@ -77,8 +82,6 @@
                 <div class="copyright">                        
                     <p>Copyright 2019 All rights reserved | Haili Copas-Starke</p>
                 </div>
-                <script src="jquery.min.js"></script>
-                <script src="owlcarousel/owl.carousel.min.js"></script>
             </footer>
         </div>
     </body>
