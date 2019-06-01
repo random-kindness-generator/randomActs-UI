@@ -30,17 +30,6 @@
                     </ul>
                 </div>
             </div>
-            <section class="intro-section">
-                <div id="kindness-box">
-                    <p class="kindness">Kindness 1</p>                    
-                    <p class="source"><span class="citation">Does it work? </span><span class="year">2019</span></p>
-                </div>
-                <button id="loadact">Generate Act of Kindness</button>
-                <script src="js/script.js"></script>
-                <script>
-                setInterval(printKindness, 5000);
-                </script>
-            </section>
             <section class="app-services">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
@@ -68,6 +57,18 @@
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span> 
                     <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+            </section>
+            <section class="intro-section">
+                <div id="kindness-box">
+                    <div class="kindness-container">
+                        <p class="kindness">Kindness 1</p>                    
+                        <p class="source"><span class="citation">Does it work? </span><span class="year">2019</span></p>
+                    </div>
+                    <button id="loadact">Tell me what to do!</button>
+                    <script>
+                    setInterval(printKindness, 5000);
+                    </script>
                 </div>
             </section>
             <footer class="footer-section">
