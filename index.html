@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Goodwill Gestures</title>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">        
+        <link rel="stylesheet" href="css.font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+        <!-- JS -->
+        <script defer="defer" src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">       
+            <div class="nav-container">
+                <div class="nav-title">
+                    <h1>Goodwill Gestures</h1>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <section class="app-services">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <h3>Regularly Practice Kindness</h3>
+                        <p>Sometimes life gets so busy that we forget to practice kindness and compassion. That's why we created Goodwill Gestures to send us daily reminders.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <h3>Build Better Connections</h3>
+                        <p>Goodwill Gestures takes daily reminders one step further by randomly selecting one of your friends to receive your act of kindness.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <h3>Kindness Spreads</h3>
+                        <p>Bringing joy to others spreads positivity to their relationships, too.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <h3>Improve your own Wellbeing</h3>
+                        <p>Giving and receiving acts of kindness increase your oxytocin, which is a hormone that helps lower blood pressure, increases self-esteem, and reduces feelings of depression.</p>
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+            </section>
+            <section class="intro-section">
+                <div id="kindness-box">
+                    <div class="kindness-container">
+                        <p class="kindness">Kindness 1</p>                    
+                        <p class="source"><span class="citation">Does it work? </span><span class="year">2019</span></p>
+                    </div>
+                    <button id="loadact">Tell me what to do!</button>
+                    <script>
+                    setInterval(printKindness, 5000);
+                    </script>
+                </div>
+            </section>
+            <footer class="footer-section">
+                <h3 class="footer-title">Goodwill Gestures
+                </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook" style="font-size:24px"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="font-size:24px"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" style="font-size:24px"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube" style="font-size:24px"></i></a></li>
+                </ul>
+                <div class="copyright">                        
+                    <p>Copyright 2019 All rights reserved | Haili Copas-Starke</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

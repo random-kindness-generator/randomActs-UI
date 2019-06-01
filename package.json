@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "owl.carousel": "^2.3.4",
+    "siema": "^1.5.1",
+    "slim-slider": "^1.3.1"
+  }
+}
